@@ -1,5 +1,5 @@
-import webpack, {ResolveOptions} from "webpack";
-import {BuildOptions} from "./types/config";
+import webpack, {ResolveOptions} from 'webpack';
+import {BuildOptions} from './types/config';
 
 export function buildResolves(options: BuildOptions): ResolveOptions {
 

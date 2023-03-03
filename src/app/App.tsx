@@ -1,20 +1,23 @@
-import React, {Suspense, useContext, useState} from 'react';
+import React, {Suspense} from 'react';
 import './styles/index.scss'
-import {Link, Route, Routes} from "react-router-dom";
-import {classNames} from "shared/lib/classNames/classNames";
-import {useTheme} from "app/provider/ThemeProvider";
-import {AboutPage} from "pages/AboutPage";
-import {MainPage} from "pages/MainPage";
-import {AppRouter} from "app/provider/router/ui";
-import {Navbar} from "widget/Navbar";
+import {classNames} from 'shared/lib/classNames/classNames';
+import {useTheme} from 'app/provider/ThemeProvider';
+import {AppRouter} from 'app/provider/router/ui';
+import {Navbar} from 'widget/Navbar';
+import {Sidebar} from 'widget/Sidebar/ui/Sidebar/Sidebar';
 
 const App = () => {
     const { theme } = useTheme()
 
     return (
         <div className={classNames('app', {}, [theme])}>
-            <Navbar />
-            <AppRouter />
+            <Suspense fallback="">
+                <Navbar />
+                <div className={'content-page'}>
+                    <Sidebar/>
+                    <AppRouter />
+                </div>
+            </Suspense>
         </div>
     );
 };

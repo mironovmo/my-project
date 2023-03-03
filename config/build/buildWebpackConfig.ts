@@ -1,10 +1,10 @@
-import {BuildOptions} from "./types/config";
-import webpack from "webpack";
-import path from "path";
-import {buildPlugin} from "./buildPlugins";
-import {buildLoaders} from "./buildLoaders";
-import {buildResolves} from "./buildResolves";
-import {buildDevServer} from "./buildDevServer";
+import {BuildOptions} from './types/config';
+import webpack from 'webpack';
+import path from 'path';
+import {buildPlugin} from './buildPlugins';
+import {buildLoaders} from './buildLoaders';
+import {buildResolves} from './buildResolves';
+import {buildDevServer} from './buildDevServer';
 
 export function buildWebpackConfig(options: BuildOptions): webpack.Configuration {
     const {paths, mode, isDev} = options
