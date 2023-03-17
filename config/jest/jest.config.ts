@@ -15,9 +15,7 @@ export default {
 
     // Automatically clear mock calls, instances and results before every test
     clearMocks: true,
-    coverageDirectory: 'coverage',
     testEnvironment: 'jsdom',
-    collectCoverage: true,
     coveragePathIgnorePatterns: [
         '\\\\node_modules\\\\'
     ],
