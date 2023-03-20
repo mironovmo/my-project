@@ -2,6 +2,8 @@
   "Текстовый документ": "Text document",
   "Перевод": "Translate",
   "Русский": "English",
-  "О Странице": "About Page",
-  "Главная": "Main Page"
+  "Страница не найдена": "Not Found Page",
+  "Произошла не предвиденная ошибка": "Error Page",
+  "Перезагрузить страницу": "Reload Page",
+  "Кинуть ошибку": "throw Error"
 }
