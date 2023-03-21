@@ -37,6 +37,7 @@ module.exports = {
         'semi': 'off',
         'react/react-in-jsx-scope': 'off',
         '@typescript-eslint/ban-ts-comment': 'warn',
-        'i18next/no-literal-string': ['error', { markupOnly: true }]
+        'i18next/no-literal-string': ['error', { markupOnly: true }],
+        'object-curly-spacing': ['error', 'always'],
     }
 };
