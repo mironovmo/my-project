@@ -9,8 +9,6 @@ module.exports = {
         'plugin:react/recommended',
         'plugin:@typescript-eslint/recommended',
     ],
-    'overrides': [
-    ],
     'parser': '@typescript-eslint/parser',
     'parserOptions': {
         'ecmaVersion': 'latest',
@@ -20,6 +18,14 @@ module.exports = {
         'react',
         '@typescript-eslint',
         'i18next',
+    ],
+    'overrides': [
+        {
+            files: ['**/src**/*.test.{ts.tsx}'],
+            rules: {
+                'i18next/no-literal-string': 0,
+            }
+        }
     ],
     'rules': {
         'indent': [
