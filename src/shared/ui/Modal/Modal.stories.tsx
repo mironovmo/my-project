@@ -3,7 +3,6 @@ import {ComponentMeta, ComponentStory} from '@storybook/react';
 import {Modal} from './Modal';
 import {ThemeDecorator} from "shared/config/storybook/ThemeDecorator/ThemeDecorator";
 import {Theme} from "app/provider/ThemeProvider";
-import {dark} from "shared/ui/ThemeSwitcher/ui/ThemeSwitcher.stories";
 
 export default {
     title: 'shared/Modal',
