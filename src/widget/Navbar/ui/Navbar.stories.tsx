@@ -1,8 +1,8 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
-import { Navbar } from './Navbar';
 import { ThemeDecorator } from 'shared/config/storybook/ThemeDecorator/ThemeDecorator';
 import { Theme } from 'app/provider/ThemeProvider';
+import { Navbar } from './Navbar';
 
 export default {
     title: 'widget/Navbar',
@@ -19,4 +19,4 @@ light.args = {};
 
 export const dark = Template.bind({});
 dark.args = {};
-dark.decorators = [ThemeDecorator(Theme.DARK)]
+dark.decorators = [ThemeDecorator(Theme.DARK)];

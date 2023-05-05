@@ -7,6 +7,6 @@ export function RenderWithTranslation(component: ReactNode) {
     return render(
         <I18nextProvider i18n={i18nOfTests}>
             { component }
-        </I18nextProvider>
-    )
+        </I18nextProvider>,
+    );
 }
