@@ -1,24 +1,27 @@
 module.exports = {
     env: {
-        node: true,
         browser: true,
-        es2021: true
+        es2021: true,
+        jest: true,
     },
     extends: [
-        'eslint:recommended',
         'plugin:react/recommended',
-        'plugin:@typescript-eslint/recommended',
+        'airbnb',
+        'plugin:i18next/recommended',
     ],
     parser: '@typescript-eslint/parser',
     parserOptions: {
-        'ecmaVersion': 'latest',
-        'sourceType': 'module'
+        ecmaFeatures: {
+            jsx: true,
+        },
+        ecmaVersion: 'latest',
+        sourceType: 'module',
     },
     plugins: [
         'react',
         '@typescript-eslint',
         'i18next',
-        'react-hooks'
+        'react-hooks',
     ],
     rules: {
         'react/jsx-indent': [2, 4],
@@ -47,8 +50,11 @@ module.exports = {
             },
         ],
         'max-len': ['error', { ignoreComments: true, code: 100 }],
-        'react-hooks/rules-of-hooks': 'error',
-        'react-hooks/exhaustive-deps': 'error'
+        'jsx-a11y/no-static-element-interactions': 'off',
+        'jsx-a11y/click-events-have-key-events': 'off',
+        'react-hooks/rules-of-hooks': 'error', // Checks rules of Hooks
+        'react-hooks/exhaustive-deps': 'error', // Checks effect dependencies
+        'no-param-reassign': 'off',
     },
     globals: {
         __IS_DEV__: true,
@@ -58,7 +64,7 @@ module.exports = {
             files: ['**/src/**/*.{test,stories}.{ts,tsx}'],
             rules: {
                 'i18next/no-literal-string': 'off',
-                'max-len': 'off'
+                'max-len': 'off',
             },
         },
     ],

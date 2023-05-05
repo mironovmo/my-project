@@ -1,21 +1,24 @@
 export default {
+    globals: {
+        __IS_DEV__: true,
+    },
     clearMocks: true,
     testEnvironment: 'jsdom',
     coveragePathIgnorePatterns: [
-        '\\\\node_modules\\\\'
+        '\\\\node_modules\\\\',
     ],
     modulePaths: [
-        '<rootDir>/src'
+        '<rootDir>/src',
     ],
     setupFilesAfterEnv: [
-        '<rootDir>/config/jest/setupTests.ts'
+        '<rootDir>/config/jest/setupTests.ts',
     ],
     rootDir: '../../',
     testMatch: [
-        '<rootDir>src/**/*(*.)@(spec|test).[tj]s?(x)'
+        '<rootDir>src/**/*(*.)@(spec|test).[tj]s?(x)',
     ],
     moduleDirectories: [
-        'node_modules'
+        'node_modules',
     ],
     moduleFileExtensions: [
         'js',
@@ -23,7 +26,7 @@ export default {
         'ts',
         'tsx',
         'json',
-        'node'
+        'node',
     ],
     moduleNameMapper: {
         '\\.s?css$': 'identity-obj-proxy',
