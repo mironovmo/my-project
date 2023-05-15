@@ -71,22 +71,22 @@ squareSizeXL.args = {
     size: ButtonSize.SIZE_XL,
 };
 
-export const size_m = Template.bind({});
-size_m.args = {
+export const sizeM = Template.bind({});
+sizeM.args = {
     children: 'Text',
     theme: ButtonTheme.BACKGROUND_INVERTED,
     size: ButtonSize.SIZE_M,
 };
 
-export const size_l = Template.bind({});
-size_l.args = {
+export const sizeL = Template.bind({});
+sizeL.args = {
     children: 'Text',
     theme: ButtonTheme.BACKGROUND_INVERTED,
     size: ButtonSize.SIZE_L,
 };
 
-export const size_xl = Template.bind({});
-size_xl.args = {
+export const sizeXL = Template.bind({});
+sizeXL.args = {
     children: 'Text',
     theme: ButtonTheme.BACKGROUND_INVERTED,
     size: ButtonSize.SIZE_XL,

@@ -10,8 +10,10 @@ declare module '*.png'
 declare module '*.woff2'
 declare module '*.woff'
 declare module '*.svg' {
-    const content: React.FunctionComponent<React.SVGAttributes<SVGElement>>;
-    export default content;
+    import React from 'react';
+
+    const SVG: React.VFC<React.SVGProps<SVGSVGElement>>;
+    export default SVG;
 }
 
 declare const __IS_DEV__: boolean;
