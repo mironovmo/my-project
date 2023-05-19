@@ -41,6 +41,13 @@ Background.args = {
     theme: ButtonTheme.BACKGROUND,
 };
 
+export const Disabled = Template.bind({});
+Disabled.args = {
+    children: 'Text',
+    theme: ButtonTheme.BACKGROUND,
+    disabled: true,
+};
+
 export const BackgroundInverted = Template.bind({});
 BackgroundInverted.args = {
     children: 'Text',
